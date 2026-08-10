@@ -1,29 +1,30 @@
-# DuanDu 端渡
+# DuanDu
 
-DuanDu is a privacy-focused, cross-platform device continuity project for connecting a user's own devices across Windows, macOS, Linux, Android, and—within platform limits—iOS.
+English · [简体中文](README.zh-CN.md)
 
-端渡是一款重视隐私的跨平台设备协同产品，目标是让属于同一用户的 Windows、macOS、Linux、Android，以及平台能力允许范围内的 iOS 设备自然协作。
+**Status: experimental test project. There is no usable release yet.**
 
-## Project status / 项目状态
+DuanDu is a small experiment in making devices from different ecosystems work together without juggling a pile of apps and settings.
 
-The project is currently in product discovery and feasibility evaluation. The public architecture, contribution process, and source code boundaries have not yet been finalized.
+The idea came from a very ordinary setup: Windows for games, macOS for work, Android as the main phone, plus a little iOS and Linux on the side. Moving text, screenshots, notifications, and files between them is still more awkward than it should be.
 
-项目当前处于产品发现与可行性评估阶段，公开架构、贡献流程及源代码开放边界尚未最终确定。
+## Things I want to try
 
-## Product direction / 产品方向
+- Share clipboard content between devices
+- Send screenshots to another device and copy them automatically
+- Forward Android notifications and SMS where the platform allows it
+- Turn on another device's hotspot where possible
+- Connect locally first, with an encrypted relay when needed
+- Leave room for self-hosting
 
-- Clipboard and screenshot continuity / 剪贴板与截图流转
-- Notification and SMS forwarding where platforms permit / 平台允许范围内的通知与短信转发
-- Local-first connections with encrypted relay fallback / 本地连接优先、加密中继补充
-- End-to-end encrypted content / 端到端加密内容
-- Optional self-hosting / 可选自建服务
+This list is just a direction for now. Some ideas may change or turn out to be impractical on certain platforms.
 
-These items describe the current direction and are not release commitments.
+## Where it is now
 
-以上内容仅代表当前方向，不构成版本功能承诺。
+The project is still at the exploration stage. I am working through the real use cases, platform restrictions, privacy model, and what a sensible first version should look like.
 
-## License / 许可证
+There is no app to download yet, and anything added here may change as the project takes shape.
 
-The open-source license and contribution terms are under evaluation. Until a license is published, no license is granted for reuse, modification, or redistribution.
+## License
 
-开源许可证与贡献条款仍在评估中。在正式发布许可证前，本仓库内容不授予复用、修改或再分发许可。
+The repository is public, but an open-source license has not been chosen yet. Licensing and contribution guidelines will be added before the project starts accepting code contributions.
