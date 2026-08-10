@@ -2,7 +2,7 @@
 
 English · [简体中文](AGENTS.zh-CN.md)
 
-This file applies to every agent working in the public DuanDu repository, including agents that do not have access to the private parent project or earlier conversations.
+This file applies to every agent working in the DuanDu repository, including agents joining without earlier conversation context.
 
 ## Start here
 
@@ -30,9 +30,7 @@ There is no usable release yet. The project is still exploring real use cases, p
 
 ## Public repository scope
 
-This repository is intended for public-facing source code and documentation. Never add private product plans, credentials, real user data, internal logs, billing details, infrastructure secrets, or unpublished security findings.
-
-The private parent project tracks this repository as a Git submodule at `open-source/duandu`. After a public repository commit is pushed, the parent project must be updated to point to the new commit.
+This repository is the public home for DuanDu source code and documentation. Never add non-public product plans, credentials, real user data, internal logs, billing details, infrastructure secrets, or unpublished security findings.
 
 ## Documentation
 
@@ -49,7 +47,6 @@ The private parent project tracks this repository as a Git submodule at `open-so
 - Keep `main` usable and use short-lived branches for larger changes.
 - Make focused commits with clear messages.
 - Check formatting, links, and `git diff --check` before committing.
-- Never point the parent project at a public commit that has not been pushed.
 - Pushing, publishing releases, creating public issues, or changing repository settings requires explicit authorization for the current task.
 
 ## Before finishing
@@ -57,6 +54,5 @@ The private parent project tracks this repository as a Git submodule at `open-so
 1. Review the diff for unintended or private information.
 2. Confirm English and Chinese documents are aligned and cross-linked.
 3. Check the repository status.
-4. If a public commit was pushed, update and commit the submodule pointer in the parent project when it is available.
+4. If a commit was pushed, confirm that the remote branch contains it.
 5. Report what changed, what was pushed, and any remaining decision or blocker.
-
